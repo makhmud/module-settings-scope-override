@@ -8,6 +8,7 @@ Hooks.on('init', ()=> {
 
 function registerSettings(){
     // override betterrolls5e scope
+    log('Better Rolls 5E', game.modules.get("betterrolls5e") !== undefined, game.modules.get("betterrolls5e").active === true)
     if(game.modules.get("betterrolls5e") !== undefined && game.modules.get("betterrolls5e").active === true)
     {
         let setting = game.settings.settings.get("betterrolls5e.diceEnabled");
@@ -16,6 +17,7 @@ function registerSettings(){
         log("betterrolls5e.diceEnabled: done!")
     }
     // override tokenbar scope
+    log('Token Bar', game.modules.get("TokenBar") !== undefined, game.modules.get("TokenBar").active === true);
     if(game.modules.get("TokenBar") !== undefined && game.modules.get("TokenBar").active === true)
     {
         let setting = game.settings.settings.get("TokenBar.roller");
@@ -24,6 +26,7 @@ function registerSettings(){
         log("TokenBar.roller: done!")
     }
     // override dice tray scope
+    log('Dice tray', game.modules.get("dice-calculator") !== undefined, game.modules.get("dice-calculator").active === true)
     if(game.modules.get("dice-calculator") !== undefined && game.modules.get("dice-calculator").active === true)
     {
         let setting = game.settings.settings.get("dice-calculator.enableDiceTray");
