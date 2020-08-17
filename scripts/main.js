@@ -2,11 +2,11 @@
 let debug = false;
 let log = (...args) => console.log("Module Settings Override Scope | ", ...args);
 
-Hooks.on('init', ()=> {
-    registerSettings();
+Hooks.on('setup', ()=> {
+    overrideSettings();
 });
 
-function registerSettings(){
+function overrideSettings(){
     // override betterrolls5e scope
     log('Better Rolls 5E', game.modules.get("betterrolls5e") !== undefined, game.modules.get("betterrolls5e").active === true)
     if(game.modules.get("betterrolls5e") !== undefined && game.modules.get("betterrolls5e").active === true)
@@ -26,9 +26,11 @@ function registerSettings(){
         log("TokenBar.roller: done!")
     }
     // override dice tray scope
-    log('Dice tray', game.modules.get("dice-calculator") !== undefined, game.modules.get("dice-calculator").active === true)
-    if(game.modules.get("dice-calculator") !== undefined && game.modules.get("dice-calculator").active === true)
-    {
+    log('Dice tray', game.modules.get("dice-calculator") !== undefined, game.modules.get("dice-calculator").active === true, game.settings.settings.get("dice-calculator.enableDiceTray") !== undefined)
+    if(game.modules.get("dice-calculator") !== undefined 
+        && game.modules.get("dice-calculator").active === true
+        && game.settings.settings.get("dice-calculator.enableDiceTray") !== undefined
+    ) {
         let setting = game.settings.settings.get("dice-calculator.enableDiceTray");
         setting["scope"] = "client";
         game.settings.settings.set("dice-calculator.enableDiceTray", setting);
