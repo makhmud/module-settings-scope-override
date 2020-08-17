@@ -7,5 +7,6 @@
 	"minimumCoreVersion" : "0.6.5",
 	"compatibleCoreVersion": "0.6.5",
 	"esmodules" : ["scripts/main.js"],
-	"systems" : ["dnd5e"]
+	"systems" : ["dnd5e"],
+	"download": "https://raw.githubusercontent.com/makhmud/module-settings-scope-override/master/release.zip"
 }
