@@ -4,7 +4,7 @@ let log = (...args) => console.log("Module Settings Override Scope | ", ...args)
 
 const SUCCESS_MESSAGE = "DONE!"
 const WARNING_MESSAGE = "Override skipped!"
-const SCOLE_ATTR_NAME = "scope";
+const SCOPE_ATTR_NAME = "scope";
 const CLIENT_SCOPE = "client";
 const WORLD_SCOPE = "client";
 const SETTINGS_TO_OVERRIDE = [
@@ -39,7 +39,7 @@ function overrideSettings(){
             && game.settings.settings.get(value.SETTING) !== undefined
         ) {
             let setting = game.settings.settings.get(value.SETTING);
-            setting[SCOLE_ATTR_NAME] = value.SCOPE;
+            setting[SCOPE_ATTR_NAME] = value.SCOPE;
             game.settings.settings.set(value.SETTING, setting);
             log(SUCCESS_MESSAGE, value)
         } else {
