@@ -3,10 +3,10 @@
 	"title" : "Module Settings Override Scope",
 	"description" : "Override scope of module settings.",
 	"author" : "makhmud",
-	"version" : "v0.0.3",
+	"version" : "v0.0.4",
 	"minimumCoreVersion" : "0.6.5",
 	"compatibleCoreVersion": "0.6.5",
 	"esmodules" : ["scripts/main.js"],
 	"systems" : ["dnd5e"],
-	"download": "https://raw.githubusercontent.com/makhmud/module-settings-scope-override/master/release.zip"
+	"download": "https://github.com/makhmud/module-settings-scope-override/archive/master.zip"
 }
