@@ -23,5 +23,15 @@ function registerSettings(){
         game.settings.settings.set("TokenBar.roller", setting);
         log("TokenBar.roller: done!")
     }
+    // override dice tray scope
+    if(game.modules.get("dice-calculator") !== undefined && game.modules.get("dice-calculator").active === true)
+    {
+        let setting = game.settings.settings.get("dice-calculator.enableDiceTray");
+        setting["scope"] = "client";
+        game.settings.settings.set("dice-calculator.enableDiceTray", setting);
+        log("dice-calculator.enableDiceTray: done!")
+    }
+
+
     if(debug) {log(data,game.settings);}
 }
