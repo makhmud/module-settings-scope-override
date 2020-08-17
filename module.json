@@ -1,0 +1,11 @@
+{
+	"name" : "module-settings-override-scope",
+	"title" : "Module Settings Override Scope",
+	"description" : "Override scope of module settings.",
+	"author" : "makhmud",
+	"version" : "v0.0.3",
+	"minimumCoreVersion" : "0.6.5",
+	"compatibleCoreVersion": "0.6.5",
+	"esmodules" : ["scripts/main.js"],
+	"systems" : ["dnd5e"]
+}
