@@ -1,12 +1,9 @@
-
-let debug = false;
-let log = (...args) => console.log("Module Settings Override Scope | ", ...args);
-
 const SUCCESS_MESSAGE = "DONE!"
 const WARNING_MESSAGE = "Override skipped!"
 const SCOPE_ATTR_NAME = "scope";
 const CLIENT_SCOPE = "client";
-const WORLD_SCOPE = "client";
+const WORLD_SCOPE = "world";
+
 const SETTINGS_TO_OVERRIDE = [
     {
         TITLE: "Better Rolls 5E",
@@ -28,11 +25,7 @@ const SETTINGS_TO_OVERRIDE = [
     }
 ];
 
-Hooks.on('setup', ()=> {
-    overrideSettings();
-});
-
-function overrideSettings(){
+Hooks.on('setup', () => {
     SETTINGS_TO_OVERRIDE.forEach((value) => {
         if (game.modules.get(value.MODULE) !== undefined 
             && game.modules.get(value.MODULE).active === true
@@ -52,6 +45,4 @@ function overrideSettings(){
             );
         }
     })
-
-    if(debug) {log(data,game.settings);}
-}
+});
