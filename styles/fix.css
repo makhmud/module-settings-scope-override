@@ -1,3 +1,33 @@
+body {
+    font-family: 'Signika', 'Oswald', sans-serif !important;
+}
+
+.nodesto {
+    font-family: 'Signika', 'Oswald', sans-serif !important;
+    font-weight: bold;
+}
+
 #chat-log li.message {
-    font-family: 'Oswald', sans-serif !important;
+    font-family: 'Signika', 'Oswald', sans-serif !important;
+}
+
+body.game,
+#chat-log li.message,
+#chat-log header.card-header,
+.dnd5e .form-header,
+.dnd5e.sheet.actor ul.attributes li.attribute footer.attribute-footer,
+.dnd5e.sheet.actor .counters div.counter h4,
+.dnd5e.sheet.actor .inventory-filters .flexrow h3,
+.dnd5e.sheet.actor .inventory-filters .filter-title,
+.dnd5e.sheet.actor h4.box-title,
+.dnd5e.sheet.actor ol.inventory-list .item-detail,
+.dnd5e.chat-card header.card-header h3
+{
+    font-family: 'Signika', 'Oswald', sans-serif !important;
+}
+
+.dnd5e.sheet nav.sheet-navigation,
+.dnd5e.sheet nav.sheet-header
+{
+    font-family: "Modesto Condensed", "Palatino Linotype", 'Oswald', serif !important;
 }
