@@ -12,6 +12,7 @@ body {
 }
 
 body.game,
+button,
 #chat-log li.message,
 #chat-log header.card-header,
 .dnd5e .form-header,
