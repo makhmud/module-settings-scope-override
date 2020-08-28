@@ -34,9 +34,9 @@ Hooks.on('setup', () => {
             let setting = game.settings.settings.get(value.SETTING);
             setting[SCOPE_ATTR_NAME] = value.SCOPE;
             game.settings.settings.set(value.SETTING, setting);
-            log(SUCCESS_MESSAGE, value)
+            console.log(SUCCESS_MESSAGE, value);
         } else {
-            log(
+            console.warn(
                 WARNING_MESSAGE,
                 value.TITLE, 
                 game.modules.get(value.MODULE) !== undefined, 
