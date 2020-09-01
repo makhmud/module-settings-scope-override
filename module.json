@@ -3,14 +3,11 @@
 	"title" : "Module Settings Override Scope",
 	"description" : "Override scope of module settings.",
 	"author" : "makhmud",
-	"version" : "v0.1.9",
+	"version" : "v0.1.10",
 	"minimumCoreVersion" : "0.6.5",
 	"compatibleCoreVersion": "0.6.5",
 	"esmodules" : [
 		"scripts/main.js"
-	],
-	"styles": [
-		"styles/fix.css"
 	],
 	"languages": [{
 		"lang": "ua",
