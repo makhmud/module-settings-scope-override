@@ -1,20 +1,24 @@
 {
-	"name" : "module-settings-override-scope",
-	"title" : "Module Settings Override Scope",
-	"description" : "Override scope of module settings.",
-	"author" : "makhmud",
-	"version" : "v0.1.10",
-	"minimumCoreVersion" : "0.6.5",
-	"compatibleCoreVersion": "0.6.5",
-	"esmodules" : [
+	"name": "module-settings-override-scope",
+	"title": "Module Settings Override Scope",
+	"description": "Override scope of module settings.",
+	"author": "makhmud",
+	"version": "v0.1.11",
+	"minimumCoreVersion": "0.6.5",
+	"compatibleCoreVersion": "0.6.6",
+	"esmodules": [
 		"scripts/main.js"
 	],
-	"languages": [{
-		"lang": "ua",
-		"name": "Ukrainian",
-		"path": "lang/foundry-ua.json"
-	}],
-	"systems" : ["dnd5e"],
+	"languages": [
+		{
+			"lang": "ua",
+			"name": "Ukrainian",
+			"path": "lang/foundry-ua.json"
+		}
+	],
+	"systems": [
+		"dnd5e"
+	],
 	"url": "https://github.com/makhmud/module-settings-scope-override",
 	"download": "https://github.com/makhmud/module-settings-scope-override/archive/master.zip",
 	"manifest": "https://github.com/makhmud/module-settings-scope-override/raw/master/module.json"
